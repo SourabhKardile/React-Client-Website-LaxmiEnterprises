@@ -1,10 +1,13 @@
 import React from 'react'
+import NavbarComponent from './NavbarComponent'
+import HeadingComponent from './HeadingComponent'
 
 export default function Main() {
   return (
-    <div>
-      <h1>Hello</h1>
-    </div>
+    <>
+      <NavbarComponent />
+      <HeadingComponent />
+    </>
     
   )
 }
