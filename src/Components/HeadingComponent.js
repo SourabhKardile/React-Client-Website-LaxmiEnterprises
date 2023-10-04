@@ -1,7 +1,50 @@
 import React from "react";
-// import Background from '../images/hex.png'
+// import Background from '../images/gem.png'
+import video from '../images/animation.mp4'
 export default function HeadingComponent() {
   return (
+    <>
+    <div className="maincontent" style={{backgroundColor:'#dbdbdb'}}>
+    <div className="mainvideo">
+    <div className="titletext">
+
+    <div
+            className="display-5 text-danger"
+            style={{
+              fontFamily: "Roboto",
+              fontWeight: "bold",
+              letterSpacing: "3px",
+            }}
+          >
+            LAXMI
+          </div>
+          <div
+            className="display-2"
+            style={{
+              fontFamily: "Roboto",
+              fontWeight: "bold",
+              letterSpacing: "3px",
+            }}
+          >
+            ENTERPRISES
+          </div>
+          <hr
+            className="d-none d-sm-block"
+            style={{ borderTop: "1px solid #000000" }}
+          />
+          <div
+            className="h5 fw-normal"
+            style={{ lineHeight: "1.5", fontStyle: "italic" }}
+          >
+            Transforming Ideas into Visual Masterpieces.
+            <br />
+            <span className="text-danger"> Your Vision, Our Craft.</span>
+          </div>
+    </div>
+      <video className="videodiv" src={video} autoPlay muted style={{width:'70%', height:'100%', objectFit:'cover'}}/>
+    </div>
+    </div>
+
     <div
       data-bs-spy="scroll"
       data-bs-target="#navbar-example"
@@ -11,7 +54,7 @@ export default function HeadingComponent() {
       className="container-fluid m-0 p-0"
       style={{ overflow: "hidden" }}
     >
-      <div className="row p-5 mb-5">
+      {/* <div className="row p-5 mb-5">
         <div className="col-md-2"></div>
         <div
           className="col-md-6 mb-5 col-lg-6"
@@ -61,7 +104,7 @@ export default function HeadingComponent() {
             className="img-fluid"
           />
         </div>
-      </div>
+      </div> */}
 
       {/* <div
         style={{
@@ -90,6 +133,7 @@ export default function HeadingComponent() {
         id="about"
         className="container-fluid"
         style={{
+          boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
           background: "#ff3334",
           //     backgroundImage: `url(${Background})`,
           // backgroundSize: 'cover',
@@ -98,7 +142,7 @@ export default function HeadingComponent() {
       >
         <div className="row mb-5">
           <div className="col-md-2"></div>
-          <div className="col-md-4 mt-5 d-none d-md-block">
+          <div className="col-md-4 d-none d-md-block " style={{marginTop:100}}>
             <img
               src={require("../images/leftdesign.png")}
               alt="Background"
@@ -139,8 +183,10 @@ export default function HeadingComponent() {
                 backgroundColor: "#ffffff",
                 color: "#ff3334",
                 fontWeight: "bold",
-                width: 130,
+                width: 150,
                 borderRadius: 3,
+                cursor:'default',
+                boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px'
               }}
             >
               About Us
@@ -151,5 +197,6 @@ export default function HeadingComponent() {
       </div>
       
     </div>
+    </>
   );
 }

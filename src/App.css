@@ -1,6 +1,6 @@
-*{
- margin: 0px;
- padding: 0px;
+* {
+  margin: 0px;
+  padding: 0px;
 }
 .App {
   text-align: center;
@@ -41,15 +41,57 @@
   }
 }
 
-.navbar
-        {
-            border-bottom:1px solid #E8E8E8;
-        }
-        @media (max-width: 978px) {
-          .aboutpara{
-            padding-bottom:3rem;
-          }
-        }
+.navbar {
+  border-bottom: 1px solid #e8e8e8;
+}
+@media (max-width: 978px) {
+  .aboutpara {
+    padding-bottom: 3rem;
+  }
+}
+
+.mainvideo{
+  width:100%;
+  height:100vh;
+  display: flex;
+  justify-content: flex-end;
+}
+.titletext{
+  position: absolute;
+  width: 90%;
+  margin-top: 70px;
+  height: 100%;
+  top:0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+
+}
+
+.contentvideo{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 
-
+@media(max-width: 584px){
+  .maincontent{
+    height: 50vh;
+  }
+  .titletext{
+    position: relative;
+    margin-top: 70px;
+    height:70vh;
+    justify-content: start;
+  }
+.videodiv{
+  display: none;
+}
+}

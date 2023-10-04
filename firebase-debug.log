@@ -1,0 +1,22 @@
+[debug] [2023-10-04T17:34:57.514Z] ----------------------------------------------------------------------
+[debug] [2023-10-04T17:34:57.520Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-10-04T17:34:57.522Z] CLI Version:   12.6.0
+[debug] [2023-10-04T17:34:57.522Z] Platform:      win32
+[debug] [2023-10-04T17:34:57.523Z] Node Version:  v16.20.1
+[debug] [2023-10-04T17:34:57.526Z] Time:          Wed Oct 04 2023 23:04:57 GMT+0530 (India Standard Time)
+[debug] [2023-10-04T17:34:57.527Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-10-04T17:34:57.539Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-10-04T17:34:57.824Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-10-04T17:34:57.825Z] > authorizing via signed-in user (sourabhkardile47@gmail.com)
+[debug] [2023-10-04T17:34:57.825Z] [iam] checking project laxmienterprises-c4dec for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-10-04T17:34:57.828Z] > refreshing access token with scopes: []
+[debug] [2023-10-04T17:34:57.832Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-10-04T17:34:57.833Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-10-04T17:34:58.085Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-10-04T17:34:58.085Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-10-04T17:34:58.118Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/laxmienterprises-c4dec:testIamPermissions [none]
+[debug] [2023-10-04T17:34:58.119Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/laxmienterprises-c4dec:testIamPermissions x-goog-quota-user=projects/laxmienterprises-c4dec
+[debug] [2023-10-04T17:34:58.120Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/laxmienterprises-c4dec:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-10-04T17:34:58.547Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2023-10-04T17:34:58.548Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
