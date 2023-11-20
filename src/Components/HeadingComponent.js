@@ -54,57 +54,6 @@ export default function HeadingComponent() {
       className="container-fluid m-0 p-0"
       style={{ overflow: "hidden" }}
     >
-      {/* <div className="row p-5 mb-5">
-        <div className="col-md-2"></div>
-        <div
-          className="col-md-6 mb-5 col-lg-6"
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-          }}
-        >
-          <div
-            className="display-5 text-danger"
-            style={{
-              fontFamily: "Roboto",
-              fontWeight: "bold",
-              letterSpacing: "3px",
-            }}
-          >
-            LAXMI
-          </div>
-          <div
-            className="display-2"
-            style={{
-              fontFamily: "Roboto",
-              fontWeight: "bold",
-              letterSpacing: "3px",
-            }}
-          >
-            ENTERPRISES
-          </div>
-          <hr
-            className="d-none d-sm-block"
-            style={{ borderTop: "1px solid #808080" }}
-          />
-          <div
-            className="h5 fw-normal"
-            style={{ lineHeight: "1.5", fontStyle: "italic" }}
-          >
-            Transforming Ideas into Visual Masterpieces.
-            <br />
-            <span className="text-danger"> Your Vision, Our Craft.</span>
-          </div>
-        </div>
-        <div className="col-md-4">
-          <img
-            src={require("../images/logo.png")}
-            alt=""
-            className="img-fluid"
-          />
-        </div>
-      </div> */}
 
       {/* <div
         style={{
@@ -125,10 +74,8 @@ export default function HeadingComponent() {
         <div
           style={{ flex: 1, borderTop: "1px solid rgba(220, 53, 69, 0.3)" }}
         ></div>
-      </div>
-      <div>
-        <h1>Services</h1>
       </div> */}
+      
       <div
         id="about"
         className="container-fluid"
@@ -194,6 +141,11 @@ export default function HeadingComponent() {
           </div>
           <div className="col-md-1"></div>
         </div>
+      </div>
+      <div id="services" style={{marginTop:40}}><h1 align="center">Providing <b>High-Quality Services</b></h1>
+      <div className="service">
+      
+      </div>
       </div>
       
     </div>
