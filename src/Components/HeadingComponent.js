@@ -1,22 +1,23 @@
 import React from "react";
 // import Background from '../images/gem.png'
 import video from '../images/animation.mp4'
-import { fadeInLeft} from 'react-animations';
+import { fadeInLeft, zoomIn} from 'react-animations';
 import { StyleSheet, css } from 'aphrodite';
-import { useInView } from 'react-intersection-observer';
+
 import AboutUs from "./AboutUs";
+import Services from "./Services/Services";
 
 
 export default function HeadingComponent() {
-  const [ref, inView] = useInView({
-    triggerOnce: true,
-    threshold: 0, // Adjust the threshold as needed
-  });
   const styles = StyleSheet.create({
 
     left:{
         animationName:fadeInLeft,
         animationDuration:'3s'
+    },
+    ZoomIn: {
+      animationName: zoomIn,
+      animationDuration: '1s', // Set the duration to 1 second
     },
 
 
@@ -27,8 +28,7 @@ export default function HeadingComponent() {
     <div className="maincontent" style={{backgroundColor:'#dbdbdb'}}>
     <div className="mainvideo">
     <div 
-    ref={ref}
-    className={`titletext ${inView ? css(styles.left) : ''}`}
+    className={`titletext ${css(styles.left)}`}
     >
 
     <div
@@ -78,35 +78,11 @@ export default function HeadingComponent() {
       style={{ overflow: "hidden" }}
     >
 
-      {/* <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
-        <div
-          style={{ flex: 1, borderTop: "1px solid rgba(220, 53, 69, 0.3)" }}
-        ></div>
-        <img
-          src={require("../images/gem.png")}
-          alt=""
-          width={"40"}
-          style={{ margin: 15 }}
-        />
-        <div
-          style={{ flex: 1, borderTop: "1px solid rgba(220, 53, 69, 0.3)" }}
-        ></div>
-      </div> */}
       
       <AboutUs />
-      <div id="services" style={{marginTop:40}}><h1 align="center">Providing <b>High-Quality Services</b></h1>
-      <div className="service">
-      
-      </div>
-      </div>
-      
-      
+     <Services />
+
+  
     </div>
     </>
   );

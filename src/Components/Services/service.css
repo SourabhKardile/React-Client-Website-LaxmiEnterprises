@@ -1,0 +1,25 @@
+.service{
+    /* background-color: #282c34; */
+    margin: 5rem 0rem;
+    height: 35rem;
+    background-position: center;
+    background-size: contain; /* Adjusts the background image to cover the entire element */
+    background-repeat: no-repeat;
+    background-image: url('../../images/services/service.png');
+  }
+
+  @media(min-width: 584px){
+
+    .smDeviceService{
+      display: none;
+    }
+     
+}
+.smDeviceService{
+  margin: 5rem 0rem;
+  background-position: center; 
+  height: 'auto'; 
+   background-size: cover; 
+  background-repeat: no-repeat;
+   background-image: url('../../images/services/ServiceBack.png');
+}

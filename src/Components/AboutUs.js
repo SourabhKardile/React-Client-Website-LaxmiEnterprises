@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { fadeIn, fadeInLeft, fadeInRight, rollIn } from 'react-animations';
+import { fadeIn, fadeInLeft, fadeInRight } from 'react-animations';
 import { StyleSheet, css } from 'aphrodite';
 import { useInView } from 'react-intersection-observer';
 
@@ -31,7 +31,7 @@ export default function AboutUs() {
     ref={ref}
       id="about"
       
-      className={inView ? css(styles.fadeIn) : ''}
+      className={`container-fluid ${inView ? css(styles.fadeIn) : ''}`}
       style={{
         boxShadow:
           '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
@@ -43,7 +43,7 @@ export default function AboutUs() {
           <div className={`col-md-4 d-none d-md-block ${inView ? css(styles.left) : ''}`}
           style={{marginTop:100}}>
             <img
-              src={require("../images/leftdesign.png")}
+              src={require("../images/leftSide.png")}
               alt="Background"
               style={{
                 width: "auto",

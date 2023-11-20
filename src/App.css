@@ -94,14 +94,13 @@
 .videodiv{
   display: none;
 }
+.service{
+  display: none;
 }
 
-.service{
-  /* background-color: #282c34; */
-  margin: 5rem 0rem;
-  height: 35rem;
-  background-position: center;
-  background-size: contain; /* Adjusts the background image to cover the entire element */
-  background-repeat: no-repeat;
-  background-image: url('../src/images/service.png');
 }
+
+
+
+
+

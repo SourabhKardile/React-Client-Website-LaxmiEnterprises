@@ -1,5 +1,6 @@
 import React from 'react'
 import './contact.css';
+import Footer from './Footer/Footer';
 export default function ContactUs() {
   return (
    <>
@@ -65,7 +66,7 @@ export default function ContactUs() {
             </div>
         </div>
     </section>
-
+<Footer />
   
    </>
   )

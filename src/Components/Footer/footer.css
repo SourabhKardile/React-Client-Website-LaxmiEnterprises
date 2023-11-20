@@ -1,0 +1,28 @@
+.footer{
+    background-color: #ff3334;
+}
+.Link {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+  }
+  
+  .Link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    bottom: 0;
+    left: 0;
+    transition: background-color 0.3s ease;
+  }
+  
+  .Link:hover {
+    color: #ffffff; /* Change color on hover */
+  }
+  
+  .Link:hover::after {
+    background-color: #ffffff; /* Add underline color on hover */
+  }
