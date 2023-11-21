@@ -1,73 +1,75 @@
-import React from 'react'
-import './contact.css';
-import Footer from './Footer/Footer';
+import React from "react";
+import Footer from "./Footer/Footer";
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
+import { SlLocationPin } from "react-icons/sl";
+import { TfiEmail } from "react-icons/tfi";
+import { IoCallOutline } from "react-icons/io5";
+import { FaInstagram } from "react-icons/fa";
+import "./contact.css"; // Import your custom CSS file
+
 export default function ContactUs() {
   return (
-   <>
-     <section class="contact_us">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10 offset-md-1">
-                    <div class="contact_inner">
-                        <div class="row">
-                            <div class="col-md-10">
-                                <div class="contact_form_inner">
-                                    <div class="contact_field">
-                                        <h3>Contatc Us</h3>
-                                        <p>Feel Free to contact us any time. We will get back to you as soon as we can!.</p>
-                                        <input type="text" class="form-control form-group" placeholder="Name" />
-                                        <input type="text" class="form-control form-group" placeholder="Email" />
-                                        <textarea class="form-control form-group" placeholder="Message"></textarea>
-                                        <button class="contact_form_submit">Send</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="right_conatct_social_icon d-flex align-items-end">
-                                   <div class="socil_item_inner d-flex">
-                                      <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-                                      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                   </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="contact_info_sec">
-                            <h4>Contact Info</h4>
-                            <div class="d-flex info_single align-items-center">
-                                <i class="fas fa-headset"></i>
-                                <span>+91 8009 054294</span>
-                            </div>
-                            <div class="d-flex info_single align-items-center">
-                                <i class="fas fa-envelope-open-text"></i>
-                                <span>info@flightmantra.com</span>
-                            </div>
-                            <div class="d-flex info_single align-items-center">
-                                <i class="fas fa-map-marked-alt"></i>
-                                <span>1000+ Travel partners and 65+ Service city across India, USA, Canada & UAE</span>
-                            </div>
-            
-                        </div>
+    <>
+      <div className="contact">
+        <div className="container mt-5 mb-5 d-flex justify-content-center px-0" >
+          <Card className="contact-card" >
+            <div className="row m-0">
+            <div className="col-md-4 col-12" style={{backgroundColor:'#dc3545', borderRadius:10}}>
+                <Card.Body>
+                  <Card.Title style={{ fontSize: 28, margin: 20,marginBottom:40, color:'#ffffff' }}>
+                    Contact Us
+                  </Card.Title>
+                  <div className="row my-4">
+                    <div className="col-1">
+                      <SlLocationPin size={22} color="#ffffff" />
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section class="map_sec">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10 offset-md-1">
-                    <div class="map_inner">
-                        <h4>Find Us on Google Map</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quo beatae quasi assumenda, expedita aliquam minima tenetur maiores neque incidunt repellat aut voluptas hic dolorem sequi ab porro, quia error.</p>
+                    <div className="col-11" style={{color:"#ffffff", lineHeight:1.7}}>
+                      Sector no. 1, plot no. 59/6, <br /> near Chaitanya park,
+                      Indrayaninagar,
+                      <br /> Bhosari, Pune - 411039.
                     </div>
-                </div>
+                  </div>
+                  <div className="row my-4">
+                    <div className="col-1">
+                      <TfiEmail size={22} color="#ffffff" />
+                    </div>
+                    <div className="col-11" style={{color:"#ffffff", lineHeight:1.7}}>
+                      vishal@laxmi-enterprises.in <br /> vishal09@gmail.com
+                    </div>
+                  </div>
+                  <div className="row my-4">
+                    <div className="col-1">
+                      <IoCallOutline size={22} color="#ffffff" />
+                    </div>
+                    <div className="col-11" style={{color:"#ffffff"}}>+91 8007168746</div>
+                  </div>
+                  <div className="row my-4">
+                    <div className="col-1">
+                      <FaInstagram size={22} color="#ffffff" />
+                    </div>
+                    <div className="col-11" style={{color:"#ffffff"}}>Vishal09</div>
+                  </div>
+                </Card.Body>
+              </div>
+              <div className="col-md-8 col-12 map-container">
+                <iframe
+                className="zoom-image"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7782.893797976518!2d73.84069643244769!3d18.634132328365517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c78919b460f1%3A0x8f67dd8a541279fe!2s45%2F2%2F37%2C%20Chaitanya%20Park%2C%20Sector%203%20Indrayani%20Nagar%2C%20Bhosari%2C%20Pimpri%20Chinchwad%2C%20Pimpri-Chinchwad%2C%20Maharashtra%20411026!5e0!3m2!1sen!2sin!4v1700547657560!5m2!1sen!2sin"
+                  width="100%"
+                  height="500"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  style={{ boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)" }}
+                ></iframe>
+              </div>
+              
             </div>
+          </Card>
         </div>
-    </section>
-<Footer />
-  
-   </>
-  )
+      </div>
+      <Footer />
+    </>
+  );
 }

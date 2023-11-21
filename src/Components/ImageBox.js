@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export const ImageBox = ({ imageUrl, text, zidx }) => {
+export const ImageBox = ({ imageUrl, text, color }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const containerStyle = {
@@ -12,7 +12,7 @@ export const ImageBox = ({ imageUrl, text, zidx }) => {
     height:'auto',
     transition: 'transform 0.3s ease-in-out',
     transform: isHovered ? 'scale(1.1)' : 'scale(1)',
-    backgroundColor: '#5283af',
+    backgroundColor: color,
   };
 
   const imageStyle = {
@@ -46,7 +46,7 @@ export const ImageBox = ({ imageUrl, text, zidx }) => {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <img src={imageUrl} alt="Image" style={imageStyle} />
+      <img src={imageUrl} alt="my Work" style={imageStyle} />
       <div style={{ ...overlayStyle, display: isHovered ? 'none' : 'block' }}>
       <h3>{text}</h3>
         

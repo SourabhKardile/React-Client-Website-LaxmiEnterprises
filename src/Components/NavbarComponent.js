@@ -6,7 +6,7 @@ export default function NavbarComponent() {
   return (
     <Navbar  expand="lg" className="bg-body navbar">
       <Container>
-        <Navbar.Brand href="#home" className="d-flex align-items-center"><img
+        <Navbar.Brand href="/" className="d-flex align-items-center"><img
               alt=""
               src={require('../images/logo.png')}
               width="50"
