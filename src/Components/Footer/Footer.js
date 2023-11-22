@@ -51,8 +51,8 @@ export const Footer = () => {
   const emailAddress = "vishal@laxmi-enterprises.in";
   const phoneNumber = "+918007168746";
   return (
-    <footer className="footer text-light">
-      <div className="container-fluid px-3">
+    <footer className="footer">
+      <div className="container-fluid px-3 px-md-5 ">
         <div className="row pt-3">
           {/* First Section: Logo and Company Name */}
           <div className="col-md-2 p-0 m-0">
@@ -79,20 +79,23 @@ export const Footer = () => {
                 variant="underline"
                 className="justify-content-center flex-grow-1"
               >
-                <Nav.Link href="/#about" style={linkStyle} className="Link">
-                  ABOUT US
+                <Nav.Link href="/#about" style={linkStyle} >
+                  <span className="Link">ABOUT US</span>
                 </Nav.Link>
                 <span style={lineLink}></span>
-                <Nav.Link href="/#services" style={linkStyle} className="Link">
-                  SERVICES
+                <Nav.Link href="/#services" style={linkStyle} >
+                <span className="Link">SERVICES</span>
+                  
                 </Nav.Link>
                 <span style={lineLink}></span>
-                <Nav.Link href="/catalog" style={linkStyle} className="Link">
-                  CATALOG
+                <Nav.Link href="/product" style={linkStyle} >
+                <span className="Link">PRODUCTS</span>
+                  
                 </Nav.Link>
                 <span style={lineLink}></span>
-                <Nav.Link href="contact" style={linkStyle} className="Link">
-                  CONTACT US
+                <Nav.Link href="/contact" style={linkStyle} >
+                <span className="Link">CONTACT US</span>
+                  
                 </Nav.Link>
               </Nav>
             </nav>
@@ -103,17 +106,17 @@ export const Footer = () => {
             <div className="flex-sm-row">
               <li className="list-inline-item col-sm-5">
                 <a href="/" style={address}>
-                  <div>
-                    <FaLocationDot color="#ffffff" />
+                  <div >
+                    <FaLocationDot color="#dc3545" />
                     <span style={{ fontSize: 14, fontWeight: "500" }}>
                       ADDRESS
                     </span>
                   </div>
-                  <span style={{ fontSize: 12 }}>Near Chaitanya park, </span>
-                  <span style={{ fontSize: 12 }}>
+                  <span style={{ fontSize: 12, color:'#dc3545', fontWeight: "500" }}>Near Chaitanya park, </span>
+                  <span style={{ fontSize: 12, color:'#dc3545',fontWeight: "500" }}>
                     Indrayaninagar, Bhosari,{" "}
                   </span>
-                  <span style={{ fontSize: 12 }}>Pune 411039. </span>
+                  <span style={{ fontSize: 12,  color:'#dc3545',fontWeight: "500"}}>Pune 411039. </span>
                 </a>
               </li>
               <span className="col-sm-1" style={addressLine}></span>
@@ -121,13 +124,13 @@ export const Footer = () => {
                 <a href={`tel:${phoneNumber}`} style={address}>
                   <div>
                     {" "}
-                    <FaPhone />
+                    <FaPhone color="#dc3545"/>
                     <span style={{ fontSize: 14, fontWeight: "500" }}>
                       {" "}
                       PHONE
                     </span>
                   </div>
-                  <span style={{ fontSize: 12 }}>+91 8007168746</span>
+                  <span style={{ fontSize: 12, color:"#dc3545" ,fontWeight: "500"}}>+91 8007168746</span>
                 </a>
               </li>
               </div>
@@ -136,13 +139,13 @@ export const Footer = () => {
                 <a href={`mailto:${emailAddress}`} style={address}>
                   <div>
                     {" "}
-                    <MdEmail />
+                    <MdEmail color="#dc3545"/>
                     <span style={{ fontSize: 14, fontWeight: "500" }}>
                       {" "}
                       EMAIL
                     </span>
                   </div>
-                  <span style={{ fontSize: 12 }}>{emailAddress}</span>
+                  <span style={{ fontSize: 12, color:'#dc3545' ,fontWeight: "500"}}>{emailAddress}</span>
                 </a>
               </li>
               {/* Add more social media icons as needed */}

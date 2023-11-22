@@ -19,7 +19,7 @@ export default function NavbarComponent() {
           <Nav id="navbar-example" variant='underline' className="justify-content-center flex-grow-1">
             <Nav.Link href="/#about" className="fw-bold text-danger">ABOUT US</Nav.Link>
             <Nav.Link href="/#services" className="fw-bold text-danger">SERVICES</Nav.Link>
-            <Nav.Link href="/catalog" className="fw-bold text-danger">CATALOG</Nav.Link>
+            <Nav.Link href="/product" className="fw-bold text-danger">CATALOG</Nav.Link>
             <Nav.Link href="contact" className="fw-bold text-danger">CONTACT US</Nav.Link>
           </Nav>
         </Navbar.Collapse>

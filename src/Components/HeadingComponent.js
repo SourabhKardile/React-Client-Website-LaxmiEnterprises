@@ -8,6 +8,7 @@ import AboutUs from "./AboutUs";
 import Services from "./Services/Services";
 
 
+
 export default function HeadingComponent() {
   const styles = StyleSheet.create({
 
@@ -81,7 +82,7 @@ export default function HeadingComponent() {
       
       <AboutUs />
      <Services />
-
+      
   
     </div>
     </>

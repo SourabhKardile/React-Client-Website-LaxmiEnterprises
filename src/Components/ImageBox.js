@@ -12,19 +12,19 @@ export const ImageBox = ({ imageUrl, text, color }) => {
     height:'auto',
     transition: 'transform 0.3s ease-in-out',
     transform: isHovered ? 'scale(1.1)' : 'scale(1)',
-    backgroundColor: color,
+    backgroundColor: "#000000",
   };
 
   const imageStyle = {
     width: '100%',
     height: 'auto',
     transition: 'filter 0.3s ease-in-out',
-    filter: isHovered ? 'none' : ' opacity(60%)', // Apply hue rotation on hover
+    filter: isHovered ? 'opacity(30%)' : ' none', // Apply hue rotation on hover
   };
 
   const overlayStyle = {
     position: 'absolute',
-    top: '10%',
+    top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
     color: 'white',
@@ -45,11 +45,18 @@ export const ImageBox = ({ imageUrl, text, color }) => {
       style={containerStyle}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
+      
     >
       <img src={imageUrl} alt="my Work" style={imageStyle} />
-      <div style={{ ...overlayStyle, display: isHovered ? 'none' : 'block' }}>
-      <h3>{text}</h3>
-        
+      <div style={{ ...overlayStyle, display: isHovered ? 'block' : 'none', fontFamily:'unset'}}>
+      <h2>{text}</h2><br />
+      <a href='/' style={{
+        textDecoration: "none",
+  color: "inherit",
+      }}>
+
+      <p>View More...</p>
+      </a>
       </div>
     </div>
   );

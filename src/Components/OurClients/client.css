@@ -1,0 +1,7 @@
+@media (max-width: 584px) {
+  .testimonial-text {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+  }
+}
