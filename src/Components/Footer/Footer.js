@@ -17,7 +17,8 @@ const lineLink = {
   alignSelf: "center",
   height: "20px", // Adjust the height as needed
   borderLeft: "1px solid #ccc", // Vertical line color
-  margin: "0 10px",
+  margin: 0,
+  padding:0
 };
 const addressLine = {
   content: "",
@@ -28,13 +29,13 @@ const addressLine = {
   verticalAlign: "bottom",
 };
 const linkStyle = {
+
   textDecoration: "none",
   color: "inherit",
   display: "flex",
   // Make it a flex container
   alignItems: "center",
   transition: "color 0.3s ease",
-  fontSize: 14,
   margin: 0,
   padding: 0,
 };
@@ -77,24 +78,24 @@ export const Footer = () => {
               <Nav
                 id="navbar-example"
                 variant="underline"
-                className="justify-content-center flex-grow-1"
+                className="justify-content-center link"
               >
                 <Nav.Link href="/#about" style={linkStyle} >
-                  <span className="Link">ABOUT US</span>
+                  <span>ABOUT US</span>
                 </Nav.Link>
                 <span style={lineLink}></span>
                 <Nav.Link href="/#services" style={linkStyle} >
-                <span className="Link">SERVICES</span>
+                <span>SERVICES</span>
                   
                 </Nav.Link>
                 <span style={lineLink}></span>
                 <Nav.Link href="/product" style={linkStyle} >
-                <span className="Link">PRODUCTS</span>
+                <span>PRODUCTS</span>
                   
                 </Nav.Link>
                 <span style={lineLink}></span>
                 <Nav.Link href="/contact" style={linkStyle} >
-                <span className="Link">CONTACT US</span>
+                <span>CONTACT US</span>
                   
                 </Nav.Link>
               </Nav>
@@ -112,11 +113,10 @@ export const Footer = () => {
                       ADDRESS
                     </span>
                   </div>
-                  <span style={{ fontSize: 12, color:'#dc3545', fontWeight: "500" }}>Near Chaitanya park, </span>
-                  <span style={{ fontSize: 12, color:'#dc3545',fontWeight: "500" }}>
-                    Indrayaninagar, Bhosari,{" "}
+                  <span style={{ fontSize: 12, color:'#dc3545', fontWeight: "500" }}>Near Chaitanya park, Indrayaninagar,</span>
+                  <span style={{ fontSize: 12, color:'#dc3545',fontWeight: "500" }}>Bhosari, Pune 411039.
                   </span>
-                  <span style={{ fontSize: 12,  color:'#dc3545',fontWeight: "500"}}>Pune 411039. </span>
+                 
                 </a>
               </li>
               <span className="col-sm-1" style={addressLine}></span>

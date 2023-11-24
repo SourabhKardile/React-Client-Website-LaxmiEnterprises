@@ -8,7 +8,6 @@ import s2Image from '../../images/services/2.png';
 import s3Image from '../../images/services/3.png';
 import s4Image from '../../images/services/4.png';
 import s5Image from '../../images/services/5.png';
-import sback from '../../images/services/ServiceBack.png'
 import Carousel from 'react-bootstrap/Carousel';
 // import ExampleCarouselImage from 'components/ExampleCarouselImage';
 export default function Services() {

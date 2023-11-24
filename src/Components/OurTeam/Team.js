@@ -1,7 +1,6 @@
 import React from 'react'
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card'
-import image1 from '../../images/services/1.png'
+import image1 from '../../images/Team/p1.png'
 export default function Team() {
     const imageStyle = {
         width: '80%',
@@ -30,7 +29,6 @@ export default function Team() {
          Designation
         </Card.Text>
         <hr />
-        <Button variant="primary">Social Media Link</Button>
       </Card.Body>
     </Card>
     </div>
@@ -47,7 +45,7 @@ export default function Team() {
          Designation 
         </Card.Text>
         <hr />
-        <Button variant="primary">Social Media Link</Button>
+       
       </Card.Body>
     </Card>
     </div>

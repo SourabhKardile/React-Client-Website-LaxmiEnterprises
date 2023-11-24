@@ -1,11 +1,18 @@
-.footer{
-    /* background-color: #dc3545; */
+/* .footer{
+    background-color: #dc3545;
+} */
+
+.link{
+  font-size: 16px;
 }
 
-  
-  .Link:hover::after {
-    background-color: #ffffff; /* Add underline color on hover */
-  }
+
   .nav-underline {
     --bs-nav-underline-gap: 0.1rem;
+  }
+
+  @media (max-width: 584px) {
+    .link{
+      font-size: 12px;
+    }
   }
